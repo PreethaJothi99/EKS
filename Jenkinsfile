@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    AWS_REGION = 'us-east-2'             // change if you use another region
+    AWS_REGION = 'us-east-1'             // change if you use another region
     ECR_REPO   = 'eks-hello'             // the repository name in ECR
     IMAGE_TAG  = "${env.BUILD_NUMBER}"   // unique tag per build
   }
